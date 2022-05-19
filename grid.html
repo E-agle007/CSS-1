@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+       
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+  width: 100%;
+  
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  float: left;
+
+}
+.grid-container>.item5{
+       text-align: center;
+       color: black;
+}
+.grid-container>.item4{
+       padding-left: 50px;
+       padding-bottom: 50px;
+       background-color: aliceblue;
+}
+.grid-container>.item3{
+       padding-left: 100px;
+       padding-top: 70px;
+       background-color: antiquewhite;
+}
+.grid-container>.item2{
+       background-color: aqua;
+       
+}
+.grid-container>.item1{
+       background-color: tomato;
+
+}
+.c{
+            
+            background-color:springgreen;
+            border:none;
+            border-radius: 5px;
+            color:white;
+            padding: 10px 12px;
+            text-align:center;
+            display:inline-block;
+            font-size:16px;
+            margin:4px 2px;
+            cursor:pointer;
+
+
+
+
+        }
+form  { display: table;     }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+@media only screen and (max-width: 500px) {
+       .grid >.item2{
+              background-color: aquamarine;
+       }
+}
+
+
+
+
+</style>
+</head> 
+<body>
+
+
+
+<div class="grid-container">
+  <div class="item1">Fraazo</div>
+  <div class="item2">
+         Menu: <ul>
+              <li><a href="#" style="text-decoration: none;">Fruits</a></li><br><br>
+              <li><a href="#" style="text-decoration: none;">Vegetables</a></li><br><br>
+              <li><a href="#" style="text-decoration: none;">Herbs</a></li><br><br>
+            </ul></div>
+  <div class="item3">
+         
+             <form>
+              <p> <label for="name">Items:</label>
+               <input type="text" id="name" name="name"></p><br>
+               <p> <label for="name">Quantity:</label>
+                 <select id="name" name="name">
+                 <option value="name">5Kg</option>
+                 <option value="name">10Kg</option>
+                 <option value="name">15Kg</option>
+                 </select></p><br>
+                 <p> <label for="name">Payent method:</label>
+                     <select id="name" name="name">
+                     <option value="name">Gpay</option>
+                     <option value="name">Debit card</option>
+                     <option value="name">UPI</option>
+                     </select>
+                     </p><br>
+                     <input type="submit" value="Submit">
+                     
+   
+   
+             </form><br></div> 
+  <div class="item4">
+       <form style="border-width: 100%;">
+              <div>  <p><img src="guava.jfif" width="30px " height="30px">
+                <input class="c"  type="submit" value="Add"></p><br><br></div>
+             <div>  <p>  <img src="apple.jfif" width="30px" height="30px">
+                 <input class="c" type="submit" value="Add"></p><br><br></div>
+            <div>   <p>  <img src="pear.jfif" width="30px" height="30px">
+                 <input class="c" type="submit" value="Add"></p></div>
+              
+           
+               </form>
+  </div>
+  <div class="item5">Fraazo services</div>
+</div>
+
+</body>
+</html>

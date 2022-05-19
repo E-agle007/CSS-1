@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+	color:yellowgreen;
+}
+
+
+header {
+  
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+  height: 150px;
+}
+
+
+
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 55%;
+  background-color: #f1f1f1;
+  height: 300px; 
+}
+aside{
+	padding: 15px;
+	
+	background-color:wheat;
+	color: brown;
+	
+}
+.b{
+	font-style:fantasy;
+}
+
+
+
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+footer {
+  background-color: yellow;
+  padding: 10px;
+  text-align: center;
+  color: black;
+
+}
+
+form  { display: table;      }
+p     { display: table-row;  }
+label { display: table-cell; }
+input { display: table-cell; }
+.a{
+	background-color:red;
+               border:none;
+               color:black;
+               padding:5px 22px;
+               text-align:center;
+               display:inline-block;
+               font-size:16px;
+               margin:4px 2px;
+               cursor:pointer;
+			   
+}
+
+	
+
+
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h2><u>Feedback Form</u></h2>
+  
+</header>
+
+<section>
+	
+  <article>
+    <h1>Form to fill</h1>
+	<form>
+		<p>
+		<label for="name">Teachers name:</label>
+		<input type="text" id="name" name="name" placeholder="name"></p><br>
+		<p>
+		<label for="lname">School:</label>
+		<input type="text" id="lname" name="name"></p><br>
+	    <p>	<label for="fname">Location of program:</label>
+		<input type="text" id="fname" name="name"></p><br>
+		<p><label for="loc">sponsered by:</label>
+		<input type="text" id="doc" name="name"></p><br>
+		<p><label for="date">Date:</label>
+		<input type="date" id="date" name="name"></p>
+		</form>
+		<input class="a" type="submit" value="submit">
+
+		
+
+
+  </article>
+  
+  <aside>
+	  <form>
+		  <h2><u>FEED BACK</u></h2>
+		  <div class="b1">
+		  <p>you have to give your detailed feedback here</p><br>
+		  <p>And this form is to be verified by superindent.</p></div>
+	  <textarea name="message" rows="10" cols="30" autofocus></textarea>
+	  </form>
+  </aside>
+</section>
+
+<footer>
+  <form>
+	  <label for="dat">Date Submitted:</label>
+	  <input type="date" id="dat" name="name">
+  </form>
+</footer>
+
+
+</body>
+</html>
